@@ -1,0 +1,115 @@
+// Importação do Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Estilos personalizados
+
+// Para garantir que o conteúdo fique abaixo da navbar fixa
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// Estilo para os títulos
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+// Personalização do carrossel
+.carousel-item {
+    height: 450px;
+    background-color: $gray-100;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+// Efeito de hover nos cards
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Personalização dos ícones
+.fa-3x, .fa-4x {
+    color: $primary;
+}
+
+// Estilo para links no footer
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+// Ajustes para dispositivos móveis
+@media (max-width: 767.98px) {
+    .carousel-item {
+        height: 300px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+// Personalização do formulário
+.form-control:focus, .form-select:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+}
+
+// Estilos para o banner
+.bg-primary {
+    background-color: $primary !important;
+}
+
+// Personalizações adicionais
+.text-primary {
+    color: $primary !important;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+    }
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: white;
+    }
+}
+
+// Personalização para o rodapé
+footer {
+    border-top: 5px solid $primary;
+}
+
+// Estilos para seções específicas
+.social-icons a {
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $primary !important;
+    }
+}
